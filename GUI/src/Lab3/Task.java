@@ -11,15 +11,15 @@ public class Task extends JFrame {
 	JPanel panel;
 	
 	void createText(Graphics g) {
-		Random r = new Random();
-		int x = r.nextInt(panel.getWidth());
-		int y = r.nextInt(panel.getHeight());
-		int red = r.nextInt(255);
-		int green = r.nextInt(255);
-		int blue = r.nextInt(255);
-		int size = r.nextInt(6) + 6;
-		Font font = new Font("Dialog", Font.BOLD, size);
-		Color color = new Color(red, blue, green);
+		final Random r = new Random();
+		final int x = r.nextInt(panel.getWidth());
+		final int y = r.nextInt(panel.getHeight());
+		final int red = r.nextInt(255);
+		final int green = r.nextInt(255);
+		final int blue = r.nextInt(255);
+		final int size = r.nextInt(6) + 6;
+		final Font font = new Font("Dialog", Font.BOLD, size);
+		final Color color = new Color(red, blue, green);
 		
 		g.setFont(font);
 		g.setColor(color);
