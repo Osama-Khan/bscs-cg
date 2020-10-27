@@ -21,11 +21,11 @@ public class LabTask extends JFrame{
 	public LabTask() {
 		panel = new JPanel() {
 			public void paint(java.awt.Graphics g) {
-				g.drawString("****", x, y);
+				g.drawString("___", x, y);
 			};
 		};
 		
-		Timer t = new Timer(10, new ActionListener() {
+		Timer t = new Timer(10, new ActionListener() { 
 			
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
