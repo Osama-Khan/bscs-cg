@@ -1,3 +1,4 @@
 .metadata
 GUI/src/tests/Test.java
 *.class
+*.log
