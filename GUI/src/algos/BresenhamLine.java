@@ -39,7 +39,27 @@ public class BresenhamLine {
         		g.drawString(".", x, y);
         	}
         } else if (m > -1 && m < 0) {
-        	
+        	p = 2*-dy + dx;
+        	if (x2 > x1) {
+        		x = x1;
+        		y = y1;
+        		xEnd = x2;
+        	} else {
+        		x = x2;
+        		y = y2;
+        		xEnd = x1;
+        	}
+        	g.drawString(".", x, y);
+        	while (x < xEnd) {
+        		if (p < 0) {
+        			p = p + 2 * dx - 2 * -dy;
+        			y--;
+        		} else {
+        			p = p - 2 * -dy;
+        		}
+        		x++;
+        		g.drawString(".", x, y);
+        	}
         } else if (m <= -1) {
         	
         } else if (m >= 1) {
