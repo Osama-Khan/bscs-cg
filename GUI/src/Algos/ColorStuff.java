@@ -1,4 +1,4 @@
-package Algos;
+package algos;
 
 import java.awt.Color;
 import java.util.Random;

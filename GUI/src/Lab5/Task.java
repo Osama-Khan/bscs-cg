@@ -1,4 +1,4 @@
-package Lab5;
+package lab5;
 
 import java.awt.EventQueue;
 
@@ -116,7 +116,7 @@ public class Task {
 				int x2 = Integer.parseInt(txt_x2.getText());
 				int y1 = Integer.parseInt(txt_y1.getText());
 				int y2 = Integer.parseInt(txt_y2.getText());
-				Algos.DDALine.Draw(x1, y1, x2, y2, panel_out.getGraphics());
+				algos.DDALine.draw(x1, y1, x2, y2, panel_out.getGraphics());
 			}
 
 

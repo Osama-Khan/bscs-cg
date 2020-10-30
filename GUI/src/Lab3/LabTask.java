@@ -1,4 +1,4 @@
-package Lab3;
+package lab3;
 
 import java.awt.EventQueue;
 import java.awt.Font;

@@ -1,4 +1,4 @@
-package Lab4;
+package lab4;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
