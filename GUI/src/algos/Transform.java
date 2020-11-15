@@ -25,9 +25,12 @@ public class Transform {
 		g.drawLine(rp1.x,rp1.y,rp2.x,rp2.y);
 	}
 
-	public static void rotateRect(Point p1, Point p2, Point p3, Point p4, double degAngle, Graphics g)
+	public static void rotateRect(Point p, int w, int h, double degAngle, Graphics g)
 	{
-		Point rp1 = rotatePoint(p1,degAngle);
+		Point p2 = new Point(p.x + w, p.y);
+		Point p3 = new Point(p.x + w, p.y + h);
+		Point p4 = new Point(p.x, p.y + h);
+		Point rp1 = rotatePoint(p,degAngle);
 		Point rp2 = rotatePoint(p2,degAngle);
 		Point rp3 = rotatePoint(p3,degAngle);
 		Point rp4 = rotatePoint(p4,degAngle);
