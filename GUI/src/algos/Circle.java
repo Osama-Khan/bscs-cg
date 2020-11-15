@@ -3,7 +3,7 @@ package algos;
 import java.awt.Graphics;
 
 public class Circle {
-	public void midPoint(int xc, int yc, int radius, Graphics g)
+	public static void midPoint(int xc, int yc, int radius, Graphics g)
 	{
 		int x = 0, y = radius;
 		int p = 1 - radius; 
@@ -23,7 +23,7 @@ public class Circle {
 		}
 	}
 
-	public void octantRule(int x, int y, int xc, int yc, Graphics g) {
+	public static void octantRule(int x, int y, int xc, int yc, Graphics g) {
 		g.drawString(".", xc + y, yc + x);
 		g.drawString(".", xc + x, yc + y);
 		g.drawString(".", xc - x, yc + y);
