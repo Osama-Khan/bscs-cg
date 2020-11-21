@@ -24,17 +24,10 @@ public class Scale {
 	}
 	
 	public static void scaleRect(Point p, int w, int h, double sx, double sy, Graphics g) {
-		Point p2 = new Point(p.x + w, p.y);
-		Point p3 = new Point(p.x + w, p.y + h);
-		Point p4 = new Point(p.x, p.y + h);
-		Point rp1 = scalePoint(p, sx, sy);
-		Point rp2 = scalePoint(p2, sx, sy);
-		Point rp3 = scalePoint(p3, sx, sy);
-		Point rp4 = scalePoint(p4, sx, sy);
-		g.drawLine(rp1.x,rp1.y,rp2.x,rp2.y);
-		g.drawLine(rp2.x,rp2.y,rp3.x,rp3.y);
-		g.drawLine(rp3.x,rp3.y,rp4.x,rp4.y);
-		g.drawLine(rp4.x,rp4.y,rp1.x,rp1.y);
+		Point rp = scalePoint(p, sx, sy);
+		int rw = (int) (w * sx);
+		int rh = (int) (h * sx);
+		g.drawRect(p.x, p.y, rw, rh);
 	}
 	
 	public static void scaleTri(Point p1, Point p2, Point p3, double sx, double sy, Graphics g)
