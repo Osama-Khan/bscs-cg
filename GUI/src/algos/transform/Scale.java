@@ -27,7 +27,7 @@ public class Scale {
 		Point rp = scalePoint(p, sx, sy);
 		int rw = (int) (w * sx);
 		int rh = (int) (h * sx);
-		g.drawRect(p.x, p.y, rw, rh);
+		g.drawRect(rp.x, rp.y, rw, rh);
 	}
 	
 	public static void scaleTri(Point p1, Point p2, Point p3, double sx, double sy, Graphics g)
