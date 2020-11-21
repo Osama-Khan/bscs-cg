@@ -26,7 +26,7 @@ public class Scale {
 	public static void scaleRect(Point p, int w, int h, double sx, double sy, Graphics g) {
 		Point rp = scalePoint(p, sx, sy);
 		int rw = (int) (w * sx);
-		int rh = (int) (h * sx);
+		int rh = (int) (h * sy);
 		g.drawRect(rp.x, rp.y, rw, rh);
 	}
 	
