@@ -1,10 +1,11 @@
-package algos;
+package algos.transform;
 
 import java.awt.Graphics;
 import java.awt.Point;
 
-public class Transform {
-	
+import algos.Circle;
+
+public class Rotate {
 	public static Point rotatePoint(Point p , double degAngle)
 	{
 		double radAngle = Math.toRadians(degAngle); // Convert to Degree to Radian
