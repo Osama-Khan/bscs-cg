@@ -6,6 +6,7 @@ import java.awt.Point;
 import algos.Circle;
 
 public class Rotate {
+	
 	public static Point rotatePoint(Point p , double degAngle)
 	{
 		double radAngle = Math.toRadians(degAngle); // Convert to Degree to Radian
@@ -15,6 +16,18 @@ public class Rotate {
 		int xDash = (int)(p.x * cos - p.y * sin);
 		int yDash = (int)(p.x * sin + p.y * cos);
 		
+		Point pDash = new Point(xDash, yDash);
+		return pDash;
+	}
+	
+	/* Rotate around pivot */
+	public static Point rotatePoint(Point p, Point pivot, double degAngle)
+	{
+		double rad = Math.toRadians(degAngle);
+		double sin = Math.sin(rad);
+		double cos = Math.cos(rad);
+		int xDash = (int)(pivot.x + (p.x - pivot.x )* cos - (p.y - pivot.y) * sin);
+		int yDash = (int)(pivot.y + (p.x - pivot.x) * sin + (p.y - pivot.y) * cos);
 		Point pDash = new Point(xDash, yDash);
 		return pDash;
 	}
