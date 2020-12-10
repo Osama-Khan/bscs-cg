@@ -155,12 +155,12 @@ public class ScaleRectangle extends JFrame {
 				int y = Integer.parseInt(txt_y.getText());
 				int w = Integer.parseInt(txt_width.getText());
 				int h = Integer.parseInt(txt_height.getText());
-				int sx = Integer.parseInt(txt_sx.getText());
-				int sy = Integer.parseInt(txt_sy.getText());
+				float sx = Float.parseFloat(txt_sx.getText());
+				float sy = Float.parseFloat(txt_sy.getText());
 				int xp = Integer.parseInt(txt_xpivot.getText());
 				int yp = Integer.parseInt(txt_ypivot.getText());
 				Point p = new Point(x - xp, y - yp);
-				algos.transform.Scale.scaleRect(p, w, h, sx, sy, xp, yp, panel_canvas.getGraphics());
+				algos.transform.Scale.scaleRect(p, w, h, sx, sy, new Point(xp, yp), panel_canvas.getGraphics());
 				
 				
 			} catch (Exception ex) {
