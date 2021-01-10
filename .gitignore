@@ -3,3 +3,4 @@ GUI/src/tests/Test.java
 *.class
 *.log
 *.class
+GUI/GUI.iml
